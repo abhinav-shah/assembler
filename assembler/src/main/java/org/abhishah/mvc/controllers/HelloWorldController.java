@@ -8,12 +8,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/index")
 public class HelloWorldController {
-	
-	private static final Logger LOG = LogManager.getLogger();
+
+  private static final Logger LOG = LogManager.getLogger();
 
   @RequestMapping()
   public String helloWorld() {
-	  LOG.debug("Inside hello world controller");
+    LOG.debug("Inside hello world controller");
     return "index";
   }
 }
